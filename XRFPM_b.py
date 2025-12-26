@@ -14,11 +14,6 @@ import os
 import sys
 import time
 
-pc = "Pedro" if os.path.exists('C:/Users/Pedro/OneDrive - UGent/master 2/thesis/code/XProc-main') else "lucad"
-
-sys.path.insert(1, 'C:/Users/' + pc + '/OneDrive - UGent/master 2/thesis/code/XProc-main')
-
-
 import tifffile as tf
 import pandas as pd
 import scipy as sc
@@ -2915,5 +2910,6 @@ def minerals(path_file, filename, path_csv, csv, energy):
         f['mineral phases'].create_dataset("Cross-section range", data = cs_range)
     
     return None
+
 
 
