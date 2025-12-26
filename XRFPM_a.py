@@ -13,16 +13,10 @@ import os
 import sys
 import time
 
-pc = "Pedro" if os.path.exists('C:/Users/Pedro/OneDrive - UGent/master 2/thesis/code/XProc-main') else "lucad"
 
-sys.path.insert(1, 'C:/Users/' + pc + '/OneDrive - UGent/master 2/thesis/code/XProc-main')
-
-
-# import skimage as sk
 import skimage.transform as skt
 import tifffile as tf
 import pandas as pd
-# import XProc as xpr
 import scipy as sc
 import numpy as np
 import matplotlib.pyplot as plt
@@ -2215,9 +2209,6 @@ def pad_img(img, RGB=False, cte=None):
     return enlarged_img
 
 
-
-
-
 def rotationtry(img):
     """
     try for rotation, check for loss of original data
@@ -2239,36 +2230,6 @@ def rotationtry(img):
         plt.imshow(sample)
         plt.show()
         
-    return None
-
-
-
-
-
-
-"""
-trial data
-"""
-
-path = "/Users/" + pc + "/OneDrive - UGent/master 2/thesis/ct data/trial images/spherile/" #changes depending on where the data is stored
-path2 = "/Users/" + pc + "/OneDrive - UGent/master 2/thesis/ct data/trial images/apatite/"
-path3 = "/Users/"+ pc + "/OneDrive - UGent/master 2/thesis/ct data/trial images/random/"
-
-
-
-path_trialfiles = "/Users/" + pc + "/OneDrive - UGent/master 2/thesis/code/trials/"
-
-path_csv = "C:/Users/" + pc + "/OneDrive - UGent/master 2/thesis/code/"
-
-ct_data = ["Spherile_2_000250.tif", "Spherile_2_000251.tif", "Spherile_2_000252.tif"]
-apatite_data = "BS95-AB0033.tif"
-
-trial_data = np.arange(0,40, 1).reshape(4,10)
-trial_dataset = [trial_data + 5*x for x in np.arange(0,10,1)]
-
-minerals_file = "minerals.csv"
-mineralphase = create_minerals(path_csv, minerals_file, 21)
-
-trial_pixels = pixelisation(array=trial_data)
+    return Non
 
 
