@@ -1,10 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Mon May  5 10:07:37 2025
-
-@author: lucad
-"""
-
 
 """ 
 Imports
@@ -2231,5 +2225,6 @@ def rotationtry(img):
         plt.show()
         
     return Non
+
 
 
