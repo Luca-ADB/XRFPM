@@ -1,12 +1,5 @@
 # -*- coding: utf-8 -*-
 """
-Created on Thu Dec  4 11:06:17 2025
-
-@author: lucad
-"""
-
-
-"""
 Imports
 """
 
@@ -2910,6 +2903,7 @@ def minerals(path_file, filename, path_csv, csv, energy):
         f['mineral phases'].create_dataset("Cross-section range", data = cs_range)
     
     return None
+
 
 
 
